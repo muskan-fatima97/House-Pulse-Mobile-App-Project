@@ -1,0 +1,232 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragments.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/layout_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/img_left_arrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/left_arrow" />
+
+            <TextView
+                android:id="@+id/tv_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/profile"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_profile_image"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:src="@drawable/profile_image"
+            android:layout_below="@id/layout_profile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/custom_capture_image"/>
+
+
+        <ImageView
+            android:id="@+id/image_camera"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:src="@drawable/photo_camera"
+            android:background="@drawable/camera_background"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_alignEnd="@id/img_profile_image"
+            android:layout_alignBottom="@id/img_profile_image"
+            android:contentDescription="TODO"
+            android:focusable="true" />
+
+
+
+        <LinearLayout
+            android:id="@+id/profile_manage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@id/image_camera"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/profile_vector"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/write_profile"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"/>
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/right_arrow"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/profile_manage"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="10dp"/>
+        <LinearLayout
+            android:id="@+id/password_manage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/profile_manage"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/reset_pass"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_password"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/right_arrow"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/password_manage"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/location_manage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/password_manage"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/address"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/right_arrow"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/location_manage"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@color/light_gray"
+            android:layout_marginTop="10dp"/>
+
+        <LinearLayout
+            android:id="@+id/logout_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/location_manage"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/logout"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/log_out"
+                android:textColor="@color/red"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp" />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

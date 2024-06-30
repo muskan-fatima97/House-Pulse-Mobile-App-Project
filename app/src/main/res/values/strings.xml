@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">HousePulse</string>
+    <string name="title">House Pulse</string>
+    <string name="boarding_1">Welcome Back!</string>
+    <string name="detail_one">Login to your account using Mobile number</string>
+    <string name="phone_number">Enter Phone number</string>
+    <string name="password">Enter Password</string>
+    <string name="change_pass">Forgot Password?</string>
+    <string name="google">Login with Google</string>
+    <string name="facebook">Login with Facebook</string>
+    <string name="continue_with">or continue with </string>
+    <string name="login">Login</string>
+    <string name="no_account">Do not have an account?</string>
+    <string name="sign_up">SignUp</string>
+    <string name="create_acc">Create New Account</string>
+    <string name="detail_two">Set up your user name and password.You can always change it later.</string>
+    <string name="full_name">Enter Name</string>
+    <string name="email_id">Enter Email</string>
+    <string name="re_write_pass">Re-write Password</string>
+    <string name="existing_acc">Already have an account?</string>
+    <string name="pass_detail">To get your new password you need to enter your phone number below, and we will send you an OTP that number for confirmation.</string>
+    <string name="send">Send</string>
+    <string name="verify">Verify</string>
+    <string name="change">Change</string>
+    <string name="decline">Cancel</string>
+    <string name="otp">Enter OTP</string>
+    <string name="otp_detail">A verification code has been sent on your number.</string>
+    <string name="change_password">Change Password</string>
+    <string name="pass_not_matched">Password is not matching.</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="invalid_phone">Invalid phone number</string>
+    <string name="password_too_short">Password must be at least 8 characters</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Booking fragment</string>
+    <string name="profile">Profile</string>
+    <string name="select_profile">Profile Photo</string>
+    <string name="img_camera">Camera</string>
+    <string name="img_gallery">Gallery</string>
+    <string name="write_profile">Edit Profile</string>
+    <string name="booked">My Bookings</string>
+    <string name="location">My Address</string>
+    <string name="privacy">Privacy Policy</string>
+    <string name="log_out">Log out</string>
+    <string name="tv_update">Update</string>
+    <string name="bst_service">Best Services</string>
+    <string name="tv_all">Top Rated Bookings</string>
+    <string name="category">All Categories</string>
+    <string name="service">Services</string>
+    <!--Category Fragment-->
+
+    <string name="text_category">All Categories</string>
+</resources>
